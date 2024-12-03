@@ -31,4 +31,4 @@ jobs:
       - name: Build from source
         run: npx tsc
       - name: Run tests
-        run: npm test
+        run: npx jest /dist/test/*
