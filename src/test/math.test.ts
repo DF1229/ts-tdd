@@ -19,4 +19,10 @@ describe('The math module', () => {
     it('should multiply correctly', () => {
         expect(math.mult(1, 3)).toEqual(3);
     });
+
+    it('should subtract correctly', () => {
+        expect(math.subtract(5, 1)).toEqual(4);
+        expect(math.subtract(5123, 123)).toEqual(5000);
+        expect(math.subtract(5123, -123)).toEqual(5246);
+    });
 });
