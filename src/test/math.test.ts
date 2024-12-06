@@ -12,7 +12,8 @@ describe('The math module', () => {
     it('should correctly divide two numbers', () => {
         expect(math.divide(1, 2)).toEqual(0.5);
         expect(math.divide(2, 1)).toEqual(2);
-        expect(math.divide(5, 2)).toEqual(2.5);        
+        expect(math.divide(5, 2)).toEqual(2.5);
+        expect(math.divide(30, 0)).toEqual(30);
     });
 
     it('should multiply correctly', () => {
